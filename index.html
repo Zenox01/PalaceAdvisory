@@ -146,6 +146,7 @@ text-align: center;
   width:100%;
   background:rgba(0, 0, 0, 1);
   position:fixed;
+  z-index:1001;
   left:0;
   top:0;
  }
@@ -156,7 +157,10 @@ text-align: center;
  
 <!-- notification for small viewports and landscape oriented smartphones -->
 <body >
- 
+  <div id="overlay">
+    <div class="spinner"></div> 
+    </div>
+
 <div class="device-notification" >
   <a class="device-notification--logo" href="#0">
     <img src="Logo-bg.png" alt="Palace">
@@ -468,7 +472,12 @@ text-align: center;
 <script type="text/javascript" src="js/app.js"></script>
 
 
-<script>        
+<script>   
+var overlay = document.getElementById("overlay");
+
+window.addEventListener('load', function(){
+  overlay.style.display = 'none';
+})     
 
 var hi = new Vivus('hi-there', {type: 'scenario-sync', 
 duration: 20, start: 'autostart', forceRender: false, dashGap: 20}, function () {
