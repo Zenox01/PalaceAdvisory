@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
   <title>Palace Advisory</title>
-  <link rel=“stylesheet” type=“text/css” href=“animate.css”>
+  
   <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
 />
+<link rel="icon" 
+      type="image/png" 
+      href="icon.PNG">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -108,23 +111,51 @@ text-align: center;
     position:relative;
     top:0px;
   }
- 
+  #loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
     </style>
 </head>
 
-<body>
 
-
+ 
 <!-- notification for small viewports and landscape oriented smartphones -->
-<div class="device-notification">
+<body onload="myFunction()">
+  <div id="loader"></div>
+<div class="device-notification" >
   <a class="device-notification--logo" href="#0">
-    <img src="assets/img/logo.png" alt="Global">
-    <p>Global</p>
+    <img src="Logo-bg.png" alt="Palace">
+    <p>Palace Advisory</p>
   </a>
-  <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+  <p class="device-notification--message">Palace Advisory has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
 </div>
-
-<div class="perspective effect-rotate-left">
+<div id="myDiv" style="display: none;">
+<div   class="perspective effect-rotate-left">
   
   <div class="container"><div class="outer-nav--return"></div>
     <div id="viewport" class="l-viewport">
@@ -132,8 +163,8 @@ text-align: center;
         <div class="floater"> Click to navigate </nbsp><i class="fa fa-chevron-right" aria-hidden="true"></i> </div>
         <header class="header">
           <a class="header--logo" href="#0">
-            <img src="assets/img/logo.png" alt="Global">
-            <p>Global</p>
+            <img  style="width:120px;"src="Logo-bg.png" alt="Global">
+           
           </a>
          
           <div class="header--nav-toggle">
@@ -143,7 +174,10 @@ text-align: center;
             </span>
           </div>
         </header>
-        <body>
+      
+
+          
+          
         <nav class="l-side-nav">
           <ul class="side-nav">
             <li class="is-active"><span>Home</span></li>
@@ -302,13 +336,13 @@ text-align: center;
                       BUSINESS CENTER 1<br>
                       GROUND FLOOR
                       PO Box 10055, Al Nakheel, <br> Ras Al Khaimah, UAE</p>
-                    <a href="mailto:ouremail@gmail.com"><i class="fa fa-envelope"></i> info@palaceadvisory.com</a>
+                    <a href="mailto:info@palaceadvisory.com"><i class="fa fa-envelope"></i> info@palaceadvisory.com</a>
                     <a href="tel:+148126287560"> <i class="fa fa-phone"></i> +971 4 551 6707</a>
                   </div>
                   <ul class="modal--options">
-                    <li><a href="#0">Bēhance</a></li>
-                    <li><a href="#0">dribbble</a></li>
-                    <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>
+                    <!-- <li><a href="#0">Bēhance</a></li>
+                    <li><a href="#0">dribbble</a></li> -->
+                    <li><a href="mailto:info@palaceadvisory.com">Contact Us</a></li>
                   </ul>
                 </div>
               </div>
@@ -411,6 +445,8 @@ text-align: center;
     <!-- <li>Hire us</li> -->
   </ul>
 </div>
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 <script src="js/particles.js"></script> 
@@ -453,6 +489,22 @@ triggerElement: this
 });
 
         
+var myVar;
+
+
+function myFunction() {
+  myVar = setTimeout(showPage, 1000);
+ 
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+  
+
+
+}
+
     </script>
 
 </body>
