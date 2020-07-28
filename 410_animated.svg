@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="">
+  <path d="M30,1h40l29,29v40l-29,29h-40l-29-29v-40z" stroke="#000" fill="none" class="enXhhcaq_0"></path> 
+  <path d="M31,3h38l28,28v38l-28,28h-38l-28-28v-38z" fill="#a23" class="enXhhcaq_1"></path> 
+  <text x="50" y="68" font-size="48" fill="#FFF" text-anchor="middle">410</text>
+<style data-made-with="vivus-instant">.enXhhcaq_0{stroke-dasharray:325 327;stroke-dashoffset:326;animation:enXhhcaq_draw 2000ms linear 0ms forwards;}.enXhhcaq_1{stroke-dasharray:311 313;stroke-dashoffset:312;animation:enXhhcaq_draw 2000ms linear 1000ms forwards;}@keyframes enXhhcaq_draw{100%{stroke-dashoffset:0;}}@keyframes enXhhcaq_fade{0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
