@@ -77,9 +77,32 @@ opacity: 1;
     }
    .slider--item-center .slider--item-description {
      font-weight:100;
-     font-size: small;
+     font-size: normal;
+     height: 100px;
+    overflow-y: scroll;
+    padding-right: 10px;
      
    }
+   ::-webkit-scrollbar {
+  width: 7px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1591de;
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1591de; 
+}
 .content{
   text-align: center;
     
@@ -346,17 +369,17 @@ c-38 31 -75 53 -83 50 -20 -7 -93 -102 -121 -158 -95 -187 -61 -417 96 -648
                   <li class="slider--item slider--item-left">
                     <a href="#0">
                       <div class="slider--item-image">
-                        <img style="height: 300px;" src="bank.jpg" alt="Victory">
+                        <img style="height: 300px;" src="bank2.jpg" alt="Victory">
                       </div>
                       <p class="slider--item-title">Banking Services</p>
-                      <p class="slider--item-description">
+                      <div class="slider--item-description">
                         Our extensive banking network 
                         allows our clients to find ideal
                          banking solutions for their needs, with
                           possibilities of raising Structured Trade Finance to 
                           Corporate Finance. We assist our clients in administering their 
                           banking solutions in an efficient and cost effective manner.
-                      </p>
+                      </div>
                     </a>
                   </li>
                   <li class="slider--item slider--item-center">
@@ -365,7 +388,10 @@ c-38 31 -75 53 -83 50 -20 -7 -93 -102 -121 -158 -95 -187 -61 -417 96 -648
                         <img style="height: 300px;"src="anf.jpg" alt="Metiew and Smith">
                       </div>
                       <p class="slider--item-title Show-desc">Accounting  &amp; Financial Reporting</p>
-                      <p class="slider--item-description Desc">We offer turn key solutions for maintenance of accounting records, preparation of financial statements and specialized management reporting for specific purposes.</p>
+                      <div class="slider--item-description Desc">
+                        We offer turn key solutions for maintenance of accounting records, preparation of financial statements (in accordance with International Financial Reporting Standards), and 
+                        specialized management reporting for specific purposes.
+              </div>
                     </a>
                   </li>
                   <li class="slider--item slider--item-right">
@@ -375,7 +401,11 @@ c-38 31 -75 53 -83 50 -20 -7 -93 -102 -121 -158 -95 -187 -61 -417 96 -648
                       </div>
                       <p class="slider--item-title">Migration & Naturalization
                       </p>
-                      <p class="slider--item-description">Due to changing regulations and international requirements, we assist our clients in their efforts to find a suitable country of incorporation and/or domiciliation. From assisting our clients to fulfil “Substance Requirements” or obtain a new residence/citizenship to allow them to each new markets.</p>
+                      <div class="slider--item-description">Due to changing 
+                        regulations and international requirements, we assist our clients in their efforts to find a 
+                        suitable country of incorporation and/or domiciliation. From assisting our clients to fulfil 
+                        “Substance Requirements” or obtain a new residence/citizenship to allow them to each new 
+                        markets.</div>
                     </a>
                   </li>
                 </ul>
