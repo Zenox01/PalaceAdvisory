@@ -490,7 +490,7 @@ c-38 31 -75 53 -83 50 -20 -7 -93 -102 -121 -158 -95 -187 -61 -417 96 -648
           <li class="l-section section">
             <div class="hire">
               <h2>You want us to do</h2>
-              <!-- checkout formspree.io for easy form setup -->
+             
               <form class="work-request">
                 <div class="work-request--options">
                   <span class="options-a">
@@ -596,46 +596,27 @@ c-38 31 -75 53 -83 50 -20 -7 -93 -102 -121 -158 -95 -187 -61 -417 96 -648
 
 <script type="text/javascript" src="js/app.js"></script>
 
-
+<!-- 
 <script>   
 var overlay = document.getElementById("overlay");
 
 window.addEventListener('load', function(){
   overlay.style.display = 'none';
-})     
+}) 
+</script> -->
+<script>    
 
 var hi = new Vivus('hi-there', {type: 'scenario-sync', 
 duration: 20, start: 'autostart', forceRender: false, dashGap: 20}, function () {
         if (window.console) {
-          console.log('HI wali animation');
+         
         }
       }),
       obt1 = new Vivus('obturateur1', {type: 'delayed', duration: 150}),
       obt2 = new Vivus('obturateur2', {type: 'async', duration: 150}),
       obt3 = new Vivus('obturateur3', {type: 'oneByOne', duration: 150}),
-      pola = new Vivus('polaroid', {type: 'scenario-sync', duration: 20, forceRender: false});</script>
-      <script>
-       var controller = new ScrollMagic.Controller();
-
-// loop through all elements
-$('.fade-in').each(function() {
-
-// build a tween
-var tween = TweenMax.from($(this), 0.3, {autoAlpha: 0, scale: 0.5, y: '+=30', ease:Linear.easeNone});
-
-// build a scene
-var scene = new ScrollMagic.Scene({
-triggerElement: this
-})
-.setTween(tween) // trigger a TweenMax.to tween
-.addTo(controller);
-
-});
-
-        
-
-
-    </script>
-
+      pola = new Vivus('polaroid', {type: 'scenario-sync', duration: 20, forceRender: false});
+      
+</script>
 </body>
 </html>
