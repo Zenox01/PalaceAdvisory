@@ -19,9 +19,6 @@
   <meta name="author" content="Bucky Maler">
   <link rel="stylesheet" href="assets/css/main.css">
   <style>
-    .price li {
-      border-bottom: none !important;
-    }
 #Sol{
   font-size: 16px;
     margin-top: -15px;
@@ -169,71 +166,74 @@ text-align: center;
 
 .container2{
   position: absolute;
-   width:100%;
+   
     background: none;
-  top:100px
-}
+  top:100px}
   
 
 .l-viewport {
   overflow: scroll;
 }
 
+
+
+
+
 .columns {
-  float: left;
-  width: 33.3%;
-  padding: 8px;
-}
-
-.price {
-  list-style-type: none;
-  border: 1px solid #eee;
-  margin: 0;
-  padding: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.price:hover {
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
-}
-
-.price .header {
-  background-color: #111;
-  color: white;
-  font-size: 25px;
-}
-
-.price li {
-  border-bottom: 1px solid #eee;
-  padding: 20px;
-  text-align: center;
-}
-
-.price .grey {
-  background-color: #1591de;
-  font-size: 20px;
-}
-
-.button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-@media only screen and (max-width: 600px) {
-  .columns {
-    width: 100%;
+    float: left;
+    width: 33.3%;
+    padding: 8px;
   }
-}
-* {
-  box-sizing: border-box;
-}
-
+  
+  .price {
+    list-style-type: none;
+  
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .price li {
+   
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .price .grey {
+    background-color: #1591de;
+    font-size: 20px;
+  }
+  
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .columns {
+      width: 100%;
+    }
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
     </style>
 </head>
 
@@ -243,13 +243,12 @@ text-align: center;
 <body >
   <div   class="perspective effect-rotate-left">
   
-    <div class="container">
-      <div class="outer-nav--return"></div>
+    <div class="container"><div class="outer-nav--return"></div>
       <div id="viewport" class="l-viewport">
         <div class="l-wrapper">
           <div class="floater"> Click to navigate </nbsp><i class="fa fa-chevron-right" aria-hidden="true"></i> </div>
           <header class="header">
-            <a class="header--logo" href="index.html">
+            <a class="header--logo" href="#0">
               <img  style="width:120px;"src="Logo-bg.png" alt="Global">
              
             </a>
@@ -267,53 +266,59 @@ text-align: center;
 
 
             <div class="container2">
-              <h1 style="text-align:center; color:#1591de" >PRICING</h1>
-              <p style="text-align:center">Our pricing approach is always customized to our clients needs. We follow a unique approach to each individual solution.
-
-              </p>
-              
-              <div class="columns">
-                <ul class="price">
-                
-                  <li class="grey">Company Incorporation</li>
-                  <li><em>Starting from</em></li>
-                  <li><h1>2000$/mo</h1></li>
-                  
-                  <li>Incorporation services in key international jurisdiction</li>
-                  <!-- <li class="grey"><a href="#" class="button">Sign Up</a></li> -->
-                </ul>
-              </div>
-              
-              <div class="columns">
-                <ul class="price">
-                  
-                  <li class="grey">Banking Assistance</li>
-                  <li><em>Starting from</em></li>
-                  <li><h1>1000$/mo</h1></li>
-                  <li>One off payment for KYC & onboarding support</li>
-                  
-                </ul>
-              </div>
-              
-              <div class="columns">
-                <ul class="price">
+       
+                <h1 style="text-align:center; color:#1591de" >PRICING</h1>
+                <p style="text-align:center">Our pricing approach is always customized to our clients needs. We follow a unique approach to each individual solution.
             
-                  <li class="grey">Administrative Support</li>
-                  <li><em>Starting from</em></li>
-                  <li><h1>500$/mo</h1></li>
-                  <li> Outsourcing of key administrative tasks</li>
-                 
-                </ul>
-              </div>
+                </p>
+                
+                <div class="columns">
+                  <ul class="price">
+                  
+                    <li class="grey">Company Incorporation</li>
+                    <li><em>Starting from</em></li>
+                    <li><h1>2000$/mo</h1></li>
+                    
+                    <li>Incorporation services in key international jurisdiction</li>
+                    <!-- <li class="grey"><a href="#" class="button">Sign Up</a></li> -->
+                  </ul>
+                </div>
+                
+                <div class="columns">
+                  <ul class="price">
+                    
+                    <li class="grey">Banking Assistance</li>
+                    <li><em>Starting from</em></li>
+                    <li><h1>1000$/mo</h1></li>
+                    <li>One off payment for KYC & onboarding support</li>
+                    
+                  </ul>
+                </div>
+                
+                <div class="columns">
+                  <ul class="price">
               
-
-
-          <!-- ---------- -->
+                    <li class="grey">Administrative Support</li>
+                    <li><em>Starting from</em></li>
+                    <li><h1>500$/mo</h1></li>
+                    <li> Outsourcing of key administrative tasks</li>
+                   
+                  </ul>
+                </div>
+                
+            
+            
+            <!-- ---------- -->
+      
+            
+              
+            </div>
+          
         </div>
       </div>
     </div>
     <ul class="outer-nav">
-      <li ><a style="text-decoration: none;" href="index.html">Home</a></li>
+      <a style="text-decoration: none;     font-size: 60px;" href="index.html">Home</a>
       <!-- <li><a style="text-decoration: none;" href="index.html">Services</a> </li>
       <li> <a style="text-decoration: none;" href="index.html">About</a></li>
       <li> <a style="text-decoration: none;" href="index.html">Contact Us</a></li> -->
